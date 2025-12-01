@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # ========================= تحميل الملفات =========================
-model   = pickle.load(open("best_model_machine_fail.pkl", "rb"))
+model   = pickle.load(open("best_model_machine_fail.pkl", "wb"))
 scaler  = pickle.load(open("scaler.pkl", "rb"))
 columns = pickle.load(open("columns.pkl", "rb"))
 
@@ -80,3 +80,4 @@ with st.expander("جرب حالات جاهزة"):
                 'downtime_risk':1, 'machine_id':777
             })
             st.rerun()
+
