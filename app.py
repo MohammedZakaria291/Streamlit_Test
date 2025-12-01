@@ -5,7 +5,7 @@ import pandas as pd
 # ===========================
 # تحميل المودل فقط
 # ===========================
-model = pickle.load(open("best_model_machine_fail.pkl", "rb"))
+model = pickle.load(open("maintenance_required.pkl", "rb"))
 
 st.set_page_config(page_title="Predictive Maintenance", layout="centered")
 st.title("🛠️ Predictive Maintenance System")
@@ -70,3 +70,4 @@ with st.expander("عرض التفاصيل التقنية"):
     st.write("البيانات المدخلة:", data)
     st.write("الشكل بعد الـ One-Hot:", df.shape)
     st.write(df.head())
+
