@@ -86,4 +86,3 @@ with st.expander("جرب حالات جاهزة"):
             st.session_state.downtime_risk    = 1
             st.session_state.machine_id       = 777
             st.experimental_rerun()
-
