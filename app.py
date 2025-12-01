@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # ========================= تحميل الملفات =========================
-model   = pickle.load(open("best_model_machine_fail.pkl", "rb"))
+model   = pickle.load(open("maintenance_required.pkl", "rb"))
 scaler  = pickle.load(open("scaler.pkl", "rb"))
 columns = pickle.load(open("columns.pkl", "rb"))
 
@@ -86,3 +86,4 @@ with st.expander("جرب حالات جاهزة"):
             st.session_state.downtime_risk    = 1
             st.session_state.machine_id       = 777
             st.experimental_rerun()
+
